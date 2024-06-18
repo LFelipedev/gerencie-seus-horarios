@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+    --black-100: #09090B; /*Criando uma variavel*/
+    --white-100: #f2f2f2;
+    --green-500: #3ea86a;
+    --green-600: #2e8452;
+    --green-700: #1f5c39;
+    --gray-500: #a1a1aa;
+    --gray-900: #27272a;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--black-100);
+    color: var(--white-100);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 111px;
+}
+
+.container h1{
+    font-size: 92px;
+    line-height: 88px;
+    font-weight: 900;
+    color: var(--white-100);
+}
+
+.container h1 span{
+    color: var(--green-500);
+}
+
+.container .form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    padding: 64px 38px;
+}
+
+.container .form input{
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    height: 40px;
+    padding: 0px 16px;
+    background-color: var(--black-100);
+    color: #767676
+}
+
+.container .form input::placeholder{
+    color: #767676;
+}
+
+.container .form a{
+    color: var(--white-100);
+    font-size: 12px;
+    text-align: center;
+}
+
+.container .form button{
+    border-radius: 8px;
+    height: 40px;
+    padding: 0 16px;
+    background-color: var(--green-600);
+    border: 0;
+    color: var(--white-100);
+    font-weight: 600;
+    text-transform: uppercase;
+}
